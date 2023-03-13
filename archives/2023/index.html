@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="唐家富">
-<meta property="og:url" content="https://littletangjf.github.io/blogs/archives/2020/05/index.html">
+<meta property="og:url" content="https://littletangjf.github.io/blogs/archives/2023/index.html">
 <meta property="og:site_name" content="唐家富">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="tangjiafu">
@@ -428,30 +428,34 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/blogs/2020/05/19/2020-05-23-vue%E5%8E%9F%E7%90%86%E5%AE%9E%E7%8E%B0/">
+            <a class="abstract-title" href="/blogs/2023/02/19/hooks%E8%AE%B2%E8%A7%A3/">
                 
-                <span class="abstract-title-text">Vue 原理</span>
+                <span class="abstract-title-text">React Hooks</span>
             </a>
             <div class="abstract-content">
-                123456graph TB    A[observer] --&gt;|Object.defineProperty的setter和gertter| B(data数据)    a[dep订阅器] --&gt;|收集订阅统一管理| C[watcher订阅者]    A[observer] --&gt;|数据变化| C[watcher订阅者]    C[watcher订阅者]--&gt;|每个指令对应的节点绑定更新函数| D(compile解析器,解析指令)
+                参考地址
+hooks 链路图![[Pasted image 20230204195027.png]]
+useState与 class 中使用 setState 的异同点
 
+相同： 一次渲染周期中调用多次 setState，数据只会改变一次
+不同 1： class 中 setState 是合并，而函数组件中 setState 是替换
+不同 2: 修改 state 时，useState 设置相同的值不会 re-render, 而 setState 会知识点：setState 是同步还是异步
 
-Vue 主要由以下四个步骤实现
-实现一个Observer：给 data 对象对数据对象进行遍历，加上 getter 和 sette...
+useEffect执行生命周期对于 callback 回调，react 都会像 setTimeout...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2023/03/13">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/05/19</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2023/02/19</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="React">React</a>
     
 </div>
 
